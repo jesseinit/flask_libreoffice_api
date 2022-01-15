@@ -20,7 +20,7 @@ def health():
 
 @app.route("/", methods=['GET'])
 def index():
-    return {"message": "hello1"}, 200
+    return {"message": "hello"}, 200
 
 @app.route("/forms/libreoffice/convert", methods=['POST'])
 def reset():
