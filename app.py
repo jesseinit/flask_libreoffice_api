@@ -23,7 +23,7 @@ def index():
     return {"message": "hello"}, 200
 
 @app.route("/forms/libreoffice/convert", methods=['POST'])
-def reset():
+def conversion_view():
     file = request.files.get('files')
     if not file:
         return {"error": "ensure file is passing in the request"}, 422
