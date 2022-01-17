@@ -6,7 +6,7 @@ from uuid import uuid4
 from flask import Flask, request, send_from_directory, g
 
 
-UPLOAD_DIRECTORY = "/tmp"
+UPLOAD_DIRECTORY = "/home/libreuser"
 MAX_FILE_SIZE = int(os.getenv('MAX_FILE_SIZE', 30)) #In Megabyte
 
 app = Flask(__name__)

@@ -14,7 +14,6 @@ After Implementation
 
 😇
 
-
 # Getting Started
 
 1. Ensure you have docker running and enough resources(atleast 2GB RAM) allocated to it.
@@ -39,7 +38,7 @@ There are three endpoint exposed on the project and they are as follows
 
 Feel free to open an issue or a PR for any of the todos below or other improvements.
 
-- [ ] Implement non-root user in the docker image
+- [x] Implement non-root user in the docker image
 - [ ] Support other document type conversion
 - [ ] Reduce docker image size
 - [ ] Optimise how the subprocess is called

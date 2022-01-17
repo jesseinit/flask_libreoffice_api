@@ -14,4 +14,8 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+RUN addgroup libregroup && adduser -u 1001 --disabled-password --gecos '' --ingroup libregroup libreuser
+
+USER libreuser
+
 CMD ["gunicorn", "-c", "gunicorn.py", "app:app"]
