@@ -39,7 +39,6 @@ def conversion_view():
     
     new_name = f"{filename.split('.')[0]}.pdf"
     
-    #Get reference for the uploaded file for deletion after response(True Stateless)
     g.dest_file = f'{UPLOAD_DIRECTORY}/{new_name}'
     
     return send_from_directory(app.config["UPLOAD_FOLDER"], new_name, as_attachment=True)
@@ -51,5 +50,4 @@ def after_request_func(response):
     return response
 
 if __name__ == '__main__':
-    # app.run(port=3000, debug=True, host='0.0.0.0')
     app.run()
